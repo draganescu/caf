@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+	<head>
+		<!-- dry.index.header -->
+		<meta http-equiv="author" content="Andrei Draganescu" />
+		<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+		<!-- /dry.index.header -->
+	</head>
+	<body>
+		
+		<div id="container">
+			
+			<div id="header">
+				
+				<!-- dry.index.logo -->
+				<h1><a href="index.html">Cum a fost?</a></h1>
+				<!-- /dry.index.logo -->
+				<p>Despre eveniment</p>
+				
+			</div>
+			
+			<!--div id="menu">
+				
+			</div-->
+			
+			<div id="body">
+				
+				<!-- render.user.participation -->
+				<p class="intro"><span class="user-name"><!-- print.username -->scriitoru<!-- /print.username --></span> a fost la</p>
+				<h2>
+					<!-- print.event -->
+					Jean Michel jarre Polivalenta 12 Aug
+					<!-- /print.event -->
+				</h2>	
+				
+				<p class="event-description">
+					<!-- print.description -->
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi zzril delenit Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.
+					<!-- /print.description -->
+				</p>
+				<!-- /render.user.participation -->
+				
+				<form method="post" id="participate-form" action="index.html?su=">
+					
+					<input type="hidden" name="current" value="<!-- print.session.current_event --><!-- /print.session.current_event -->" />
+					
+					<ul class="form_list">
+						<li>
+							<input type="submit" class="spune_ne" name="button" value="Ai fost si tu?" />
+						</li>
+					</ul>
+										
+				</form>
+				
+				<!-- res.participants -->						
+				<h2>Cine a mai fost:</h2>
+				
+				
+				<table class="participant-list">
+					<thead>
+						<th>Cine</th>
+						<th>Si a fost ...</th>
+					</thead>
+					<tbody>
+						<!-- render.event.participants -->
+						<tr class="odd">
+							<td><!-- print.user -->scriitoru<!-- /print.user --></td>
+							<td><!-- print.message -->super beton!<!-- /print.message --></td>
+						</tr>
+						<!-- /render.event.participants -->
+						<!-- remove -->
+						<tr class="even">
+							<td>scriitoru</td>
+							<td>super beton!</td>
+						</tr>
+						<!-- /remove -->
+					</tbody>
+				</table>
+				<!-- /res.participants -->
+				
+				<div class="discusstion-box">
+					
+					<!-- res.discussions -->
+					<h2>Discutii:</h2>
+					
+					<table class="discussion-list">
+						<thead>
+							<th>Subiect</th>
+							<th>Raspunsuri</th>
+						</thead>
+						<tbody>
+							<!-- render.event.discussions -->
+							<tr class="even">
+								<td><!-- print.question -->Laserele erau pe bune?<!-- /print.question --></td>
+								<td><a href="discussion.html?su=thread"><!-- print.threads -->23<!-- /print.threads --></a></td>
+							</tr>
+							<!-- /render.event.discussions -->
+							<!-- remove -->
+							<tr class="even">
+								<td>Laserele erau pe bune?</td>
+								<td><a href="discussion.html?su=thread">23</a></td>
+							</tr>
+							<!-- /remove -->
+						</tbody>
+					</table>
+					
+					
+					<form method="post" id="newdiscussion-form" action="newdiscuss.html?su=newthread">
+						<input type="hidden" name="current" value="<!--print.session.current_event--><!--/print.session.current_event-->" />
+						<ul class="form_list">
+							<li>
+								<input type="submit" class="spune_ne" name="button" value="Porneste o discutie" />
+							</li>
+						</ul>
+											
+					</form>
+					<!-- /res.discussions -->
+				</div>
+				
+				
+					
+			</div>
+			<!-- dry.index.footer -->
+			<div id="footer">
+				<p>&copy; The Community</p>
+			</div>
+			<!-- /dry.index.footer -->
+		</div>
+	
+	</body>
+</html>

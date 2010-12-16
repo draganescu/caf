@@ -1,0 +1,147 @@
+body
+{
+	font-family: Arial;
+}
+#container
+{
+	margin: 0 auto;
+	width: 960px;
+}
+.form_list
+{
+	list-style-type: none;
+}
+.form_list li
+{
+	padding: 5px;
+}
+.place
+{
+	width: 560px;
+	height: 42px;
+	line-height: 40px;
+	font-size: 24px;
+	color: navy;
+	border: 1px solid #000000;
+	padding-left: 10px;
+	font-family: sans-serif;
+}
+.description
+{
+	width: 560px;
+	height: 260px;
+	border: 1px solid #000000;
+	padding: 10px;
+	font-family: sans-serif;
+	font-size: 16px;
+	color: navy;
+	line-height: 18px;
+}
+input.spune_ne
+{
+	width: 180px;
+	height: 46px;
+	display: block;
+	background: none;
+	border: 1px solid #000000;
+	color: navy;
+	font-size: 16px;
+	margin-bottom: 50px;
+}
+.left
+{
+	float: left;
+}
+#cui_form .form_list li
+{
+	float: left;
+	margin-left: 80px;
+	margin-bottom: 20px;
+}
+hr
+{
+	float: none;
+	clear: both;
+	border-top: 1px solid #000000;
+	display: block;
+}
+h2 
+{
+	clear: both;
+	float: none;
+}
+#body
+{
+	position: relative;
+}
+.intro
+{
+	margin-bottom: -15px;
+}
+.user-name
+{
+	font-weight: bold;
+	font-size: 24px;
+}
+.event-description
+{
+	font-size: 12px;
+	padding-top: 10px;
+}
+.participant-list,
+.discussion-list,
+.result-list
+{
+	width: 100%;
+	margin-top: 50px;
+}
+.participant-list th,
+.discussion-list th
+{
+	text-align: left;
+}
+#participate-form
+{
+	position: absolute;
+	top: -10px;
+	right: 10px;
+}
+#single-participate-form
+{
+	position: relative;
+	top: -10px;
+	left: 50%;
+	margin-left: -150px;
+	margin-top: 60px;
+}
+#newdiscussion-form
+{
+	position: absolute;
+	top: -10px;
+	right: 10px;
+}
+#answer-form
+{
+	position: absolute;
+	top: -30px;
+	right: 10px;
+}
+.indent
+{
+	margin-left: 30px;
+}
+.discusstion-box
+{
+	position: relative;
+	margin-top: 50px;
+}
+.discussion h2
+{
+	margin-bottom: 0px;
+}
+
+
+
+
+
+

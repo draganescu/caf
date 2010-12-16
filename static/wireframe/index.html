@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+	<head>
+		<!-- res.header -->
+		<meta http-equiv="author" content="Andrei Draganescu" />
+		<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+		<!-- /res.header -->
+	</head>
+	<body>
+		
+		<div id="container">
+			
+			<div id="header">
+				<!-- res.logo -->
+				<h1><a href="index.html?su=">Cum a fost?</a></h1>
+				<!-- /res.logo -->
+				<p>O comunitate de oameni care ne spun cum s-au simtit la diverse evenimente.</p>
+				
+			</div>
+			
+			<div id="body">
+				
+				<form method="post" action="submit.html?su=participate">
+					
+					<input type="hidden" name="current" value="<!-- print.session.current_event --><!-- /print.session.current_event -->" />
+					
+					<ul class="form_list">
+						<li><label for="place">Unde ai fost?</label></li>
+						<li>
+							
+							<input type="text" name="place" value="" class="place" />
+							
+						</li>
+						<li><label for="description">Si cum a fost?</label></li>
+						<li>
+							
+							<textarea name="description" class="description"></textarea>
+						</li>
+						<li>
+							<input type="submit" class="spune_ne" name="button" value="Spune-ne!" />
+						</li>
+					</ul>
+										
+				</form>
+				
+			</div>
+			
+			<!-- res.footer -->
+			<div id="footer">
+				<p>&copy; The Community &trade;</p>
+			</div>
+			<!-- /res.footer -->
+			
+		</div>
+	
+	</body>
+</html>
