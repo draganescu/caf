@@ -9,9 +9,20 @@ class db
 	var $querries = array();
 	
 	public function __call($name, $arguments) {
+		if(strpos($name,"fetch") !== false)
+		{
+			$querry = str_replace("fetch_","", $name);
+			return $this->fetch($querry, $arguments);
+		}
 		if(array_key_exists($name, $this->querries))
 			return $this->querry($this->querries[$name], $arguments);
-    }
+	}
+	
+	public function fetch($name, $arguments)
+	{
+		$data = $this->querry($this->querries[$name], $arguments);
+		return array_shift($data[0]);
+	}
 
 	function manage_data($table)
 	{
@@ -135,7 +146,7 @@ class db
 		}
 		
 	    $query = call_user_func_array('sprintf', $args);
-	    $result = mysql_query($query) or die(mysql_error().'<br>'.$query);
+	    $result = mysql_query($query) or die(mysql_error());
 	    if($result === true)
 		{
 		   return true; 	
