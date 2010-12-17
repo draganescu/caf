@@ -14,5 +14,6 @@ $app->template('-','single');
 $app->template('api/events','api/events');
 
 $app->connection('local.host', 'local.host', 'caf', 'root', '');
+//$app->debug_events = true;
 
 $app->run();
